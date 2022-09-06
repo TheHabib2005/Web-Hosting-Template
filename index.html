@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projcet-20 Web-Hostting Web-site</title>
+    <!-- ================= GOOGLE FONT'S LINK ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Akshar:wght@300;400;500;600;700&family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Koulen&family=Lobster&family=Montserrat:wght@500;600;700;800;900&family=Nunito:wght@500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&family=Oswald:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,500;1,700;1,900&family=Radio+Canada:wght@300;500;600;700&family=Rajdhani:wght@600;700&family=Raleway:ital,wght@0,400;0,500;1,400;1,500;1,600;1,900&family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- ================   FONT-AWSOME LINK =========== -->
+    <link
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- ==================== REMIX-ICON CSS CDN LINK -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- ========================  OWL CAURSAL SLIDER ========================= -->
+    <link rel="stylesheet" href="./accest/css/owl.carousel.css" />
+    <link rel="stylesheet" href="./accest/css/owl.theme.default.min.css" />
+
+    <!-- =================  CUSTOM CSS STYLEING FILE  ==================-->
+    <link rel="stylesheet" href="./accest/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./accest/css/style.css" />
+    <!-- =================  responsive CSS STYLEING FILE  ==================-->
+    <link rel="stylesheet" href="./accest/responsive/laptop.css" />
+    <link rel="stylesheet" href="./accest/responsive/ipad.css" />
+    <link rel="stylesheet" href="./accest/responsive/mobile.css" />
+
+    <link rel="stylesheet" href="./accest/css/animate.css" />
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+
+  <body id="ff">
+    <!-- ===================================================================================
+    ===>                      HEADER SECTION START
+    <!-- =================================================================================-->
+<div class="preloader">
+<div class="colorful"></div>
+</div>
+    <!-- === top-header-bar ===== -->
+    <div
+      class="wow animate__fadeInUp mobile-header-information-togle-button"
+      onclick="headeropen() "
+    >
+      Header Information
+    </div>
+    <div class="top-header-bar header-information">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-6">
+            <div class="top-header-left-content top-header-content">
+              <ul>
+                <li class="mr-30">
+                  <a href="" mr-10
+                    ><i class="fas fa-headphones-alt mr-10"></i
+                    ><span>(312) 895-9800</span></a
+                  >
+                </li>
+
+                <li>
+                  <a href="" class=""
+                    ><i class="far fa-globe-africa mr-10"></i
+                    ><span>hello.me@raxi.com</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-6">
+            <div class="top-header-right-content top-header-content">
+              <ul>
+                <li class="mr-30">
+                  <a href="" mr-10
+                    ><i class="ri-message-2-line mr-10"></i><span>Chat</span></a
+                  >
+                </li>
+
+                <li>
+                  <a class="launges-btn" onclick="laungesbaropen()"
+                    ><i class="fal fa-globe mr-10"></i><span>English</span>
+                    <i class="far fa-angle-down ml-10"></i
+                  ></a>
+
+                  <div id="launges-option-wrapper">
+                    <a class="option option-active"><span>english</span></a>
+                    <a class="option"><span>العربيّة</span></a>
+                    <a class="option"><span>spainsh</span></a>
+                    <a class="option"><span>bangla</span></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile nav-bar -->
+    <nav class="mobile-nav-bar nav-bar">
+      <div class="container dflex">
+        <div class="mobile-logo">
+          <a href=""
+            ><img
+              src="./accest/images/logo.png"
+              alt=""
+              class="mobile-nav-logo"
+            />
+          </a>
+        </div>
+
+        <div class="mobile-nav-link-menu-container">
+          <div class="mobile-search-bar-area">
+            <i
+              class="fas fa-search"
+              onclick="mobile_search_overly_active()"
+            ></i>
+            <div class="mobile-search-var-area">
+              <div class="mobile-input-icon-area">
+                <input type="text" placeholder="Search here..." />
+                <i class="fas fa-search"></i>
+              </div>
+              <i
+                class="fal fa-times"
+                onclick="mobile_search_overly_remove()"
+              ></i>
+            </div>
+          </div>
+          <div class="mobile-login-area">
+            <i class="far fa-user" onclick="login()"></i>
+          </div>
+          <div class="mobile-nav-menu-area">
+            <i class="far fa-bars" onclick="mobilenav_open()"></i>
+            <ul id="mobile-nav-bar">
+              <li>
+                <a href="#" class="drop-dwon-button"
+                  >home <i class="far fa-plus"></i
+                ></a>
+                <ul id="dropdown-menu">
+                  <li><a href="#">home demo - 1</a></li>
+                  <li><a href="#">home demo - 2</a></li>
+                  <li><a href="#">home demo - 3</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#" class="drop-dwon-button"
+                  >hosting <i class="far fa-plus"></i
+                ></a>
+                <ul id="dropdown-menu">
+                  <li class="">
+                    <a href="wordpress-hosting.html" class=""
+                      >WordPress Hosting</a
+                    >
+                  </li>
+
+                  <li class="">
+                    <a href="cloud-hosting.html" class="">Cloud Hosting</a>
+                  </li>
+
+                  <li class="">
+                    <a href="shared-hosting.html" class="">Shared Hosting</a>
+                  </li>
+
+                  <li class="">
+                    <a href="dedicated-hosting.html" class=""
+                      >Dedicated Hosting</a
+                    >
+                  </li>
+
+                  <li class="">
+                    <a href="vps-hosting.html" class="">VPS Hosting</a>
+                  </li>
+
+                  <li class="">
+                    <a href="reseller-hosting.html" class=""
+                      >Reseller Hosting</a
+                    >
+                  </li>
+
+                  <li class="">
+                    <a href="master-reseller-hosting.html" class=""
+                      >Master Reseller Hosting</a
+                    >
+                  </li>
+
+                  <li class="">
+                    <a href="windows-vps-hosting.html" class=""
+                      >Windows VPS Hosting</a
+                    >
+                  </li>
+
+                  <li class="">
+                    <a href="email-hosting.html" class="active"
+                      >Email Hosting</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#" class="drop-dwon-button"
+                  >domain <i class="far fa-plus"></i
+                ></a>
+                <ul id="dropdown-menu">
+                  <li><a href="#">home demo - 1</a></li>
+                  <li><a href="#">home demo - 2</a></li>
+                  <li><a href="#">home demo - 3</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#" class="drop-dwon-button"
+                  >pages <i class="far fa-plus"></i
+                ></a>
+                <ul id="dropdown-menu">
+                  <li><a href="#">home demo - 1</a></li>
+                  <li><a href="#">home demo - 2</a></li>
+                  <li><a href="#">home demo - 3</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#" class="drop-dwon-button"
+                  >blog <i class="far fa-plus"></i
+                ></a>
+                <ul id="dropdown-menu">
+                  <li><a href="#">home demo - 1</a></li>
+                  <li><a href="#">home demo - 2</a></li>
+                  <li><a href="#">home demo - 3</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">contact</a></li>
+
+              <i class="far fa-times-circle" onclick="mobilenav_close()"></i>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- desktop nav bar -->
+    <nav
+      class="navbar nav-bar navbar-expand-lg navbar-light desktop-main-nav-bar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href=""
+          ><img
+            src="./accest/images/logo.png"
+            alt=""
+            class="logo"
+            onclick="gg()"
+        /></a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" aria-current="page" href="#"
+                >Home <i class="fal fa-angle-down"></i
+              ></a>
+              <ul id="drop-down-menu">
+                <li><a href="" class="active">home demo - 1</a></li>
+                <li><a href="" class="active">home demo - 2</a></li>
+                <li><a href="" class="active">home demo - 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Hosting <i class="fal fa-angle-down"></i
+              ></a>
+              <ul id="drop-down-menu">
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >domain <i class="fal fa-angle-down"></i
+              ></a>
+              <ul id="drop-down-menu">
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >pages <i class="fal fa-angle-down"></i
+              ></a>
+              <ul id="drop-down-menu">
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >blog <i class="fal fa-angle-down"></i
+              ></a>
+              <ul id="drop-down-menu">
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+                <li><a href="">Drop-Down - Menu</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact </a>
+            </li>
+
+            <div class="search-area">
+              <i class="far fa-search" onclick="search_overly_active()"></i>
+              <div class="search-overly">
+                <i class="fal fa-times" onclick="search_overly_remove()"></i>
+                <div class="search-input-wrapper">
+                  <input type="text" placeholder="Search here..." />
+                  <i class="far fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <div class="login-button">
+              <a href="#" class="login" onclick="login()"
+                ><i class="far fa-sign-in"></i>login</a
+              >
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- mobile nav bar -->
+    <!-- ===================================================================================
+    ===>                      HOME-CONTENT SECTION START
+    <!-- =================================================================================-->
+
+    <section id="home">
+      <div class="home-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+              <div class="home-content">
+                <h1>Domain & Hosting Service Provider Worldwide</h1>
+                <p>
+                  Raxi dolor sit amet, consectetur adipiscing elit. Mollis
+                  vulputate sed pharetra convallis ipsum. Sed semper nam sit
+                  donec cursus bibendum tortor elementum neque. Odio nullam enim
+                  mauris adipiscing ornare viverra mattis.
+                </p>
+                <div class="domain-input-wrapper">
+                  <input
+                    type="text"
+                    class="domain-search-feild"
+                    placeholder="search your Domain"
+                    autofocus
+                  />
+                  <div class="doamin-btn-doamin-list">
+                    <a
+                      onclick="domainwraper_active()"
+                      class="domain-scelect-btn"
+                      ><span>.com </span><i class="far fa-angle-down"></i
+                    ></a>
+                    <ul id="domain-list">
+                      <a class="domain domain-active">.com</a>
+                      <a class="domain">.net</a>
+                      <a class="domain">.xyz</a>
+                      <a class="domain">.org</a>
+                    </ul>
+                  </div>
+                  <a href="" class="search-domain"
+                    ><i class="far fa-search"></i>search</a
+                  >
+                </div>
+
+                <div class="doaim-small-pricing-tag">
+                  <span>.com $7.90</span>
+                  <span> .net $4.49</span>
+                  <span>.org $7.90</span>
+                  <span>.me $5.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="home-content-image">
+                <img
+                  src="./accest/images/banner-one.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================================================================================
+    ===>                      PROGRAMING LAUNGES SLIDE SECTION START
+    <!-- =================================================================================-->
+    <div class="partner-area">
+      <div class="container">
+        <div class="partner-slides owl-carousel owl-theme">
+          <div class="item">
+            <div class="single-parther">
+              <a href=""
+                ><img src="./accest/images/partner-5.png" alt="" class=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="single-parther">
+              <a href=""
+                ><img src="./accest/images/partner-4.png" alt="" class=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="single-parther">
+              <a href=""
+                ><img src="./accest/images/partner-3.png" alt="" class=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="single-parther">
+              <a href=""
+                ><img src="./accest/images/partner-2.png" alt="" class=""
+              /></a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="single-parther">
+              <a href=""
+                ><img src="./accest/images/partner-1.png" alt="" class=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================================
+    ===>                     features SECTION START
+    <!-- =================================================================================-->
+
+    <section id="FEATURES" class="padding-bottom-80">
+      <div class="container">
+        <div class="row">
+          <!-- features-box -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="features-single-box">
+              <div class="features-shape">
+                <img src="./accest/images/shape-1.png" alt="" />
+              </div>
+              <div class="features-image">
+                <img
+                  src="./accest/images/features-1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="features-information">
+                <h3>Fast & Dedicated Server</h3>
+                <p>
+                  Raxi hosting ipsum dolor sit amet consectetur adipiscing elit,
+                  ultricies magna design pellentesque.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- features-box -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="features-single-box">
+              <div class="features-shape">
+                <img src="./accest/images/shape-1.png" alt="" />
+              </div>
+              <div class="features-image">
+                <img
+                  src="./accest/images/features-2.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="features-information">
+                <h3>Cloud Technology</h3>
+                <p>
+                  Raxi hosting ipsum dolor sit amet consectetur adipiscing elit,
+                  ultricies magna pellentesque.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- features-box -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="features-single-box">
+              <div class="features-shape">
+                <img src="./accest/images/shape-1.png" alt="" />
+              </div>
+              <div class="features-image">
+                <img
+                  src="./accest/images/features-3.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="features-information">
+                <h3>Free Installation</h3>
+                <p>
+                  Raxi hosting ipsum dolor sit amet consectetur adipiscing elit,
+                  ultricies magna pellentesque.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- features-box -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="features-single-box">
+              <div class="features-shape">
+                <img src="./accest/images/shape-1.png" alt="" />
+              </div>
+              <div class="features-image">
+                <img
+                  src="./accest/images/features-4.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="features-information">
+                <h3>24/7 Customer Support</h3>
+                <p>
+                  Raxi hosting ipsum dolor sit amet consectetur adipiscing elit,
+                  ultricies magna pellentesque.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================================
+    ===>                      PRICING SECTION START
+    <!-- =================================================================================-->
+
+    <section class="padding-bottom-100">
+      <div class="container pricing-tab-wrapper">
+        <div class="col-sm-12">
+          <div class="title">
+            <h5>Hosting Plan</h5>
+            <h2>Best Hosting Plan for Your Business</h2>
+            <p>
+              Pay by monthly or yearly, you can cancel it anytime whatever you
+              want
+            </p>
+          </div>
+        </div>
+        <!-- pricing - date plan -->
+        <div class="col-sm-12">
+          <div class="pricing-changes-btn">
+            <a class="pricong-chages-btn-active">6 Month</a>
+            <a>12 Month</a>
+            <a>36 Month</a>
+          </div>
+        </div>
+        <!-- 6 manth pricong-tab -->
+        <div class="row justify-center pricing-tab-active" id="pricing-tab">
+          <!-- pricing - box -->
+          <div class="col-lg-4 col-md-6">
+            <div class="single-pricing-box">
+              <div class="pricing-title">
+                <h3>Individual</h3>
+                <p>Powerful & Awesome Elements</p>
+              </div>
+              <div class="pricing-amount-date">
+                <h1>$49.50 <span>/Month</span></h1>
+              </div>
+              <a href="" class="pricing-plan-btn">
+                <i class="ri-mouse-line"></i>Select Plan</a
+              >
+
+              <h6>Auto Renewal <span>Cancel Anytime</span></h6>
+
+              <ul class="pricing-features-list">
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 5 Website</a>
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 30 GB SSD Storage</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free SSL Certificate</a
+                  >
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 3 Email</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> 24/7 Customer Supporte</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free Theme Installation</a
+                  >
+                </li>
+
+                <li>
+                  <a href="" class="color-dark"
+                    ><i class="fal fa-check"></i> Free CDN Included</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="color-dark"
+                    ><i class="fal fa-check"></i> Automated Backup</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- pricing - box -->
+          <div class="col-lg-4 col-md-6">
+            <div class="single-pricing-box">
+              <div class="pricing-recommended">Recommended</div>
+              <div class="pricing-title">
+                <h3>Small Team</h3>
+                <p>Powerful & Awesome Elements</p>
+              </div>
+              <div class="pricing-amount-date">
+                <h1>$79.90 <span>/Month</span></h1>
+              </div>
+              <a href="" class="pricing-plan-btn">
+                <i class="ri-mouse-line"></i>Select Plan</a
+              >
+
+              <h6>Auto Renewal <span>Cancel Anytime</span></h6>
+
+              <ul class="pricing-features-list">
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 10 Website</a>
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 60 GB SSD Storage</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free SSL Certificate</a
+                  >
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 6 Email</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> 24/7 Customer Supporte</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free Theme Installation</a
+                  >
+                </li>
+
+                <li>
+                  <a href="" class="color-dark"
+                    ><i class="fal fa-check"></i> Free CDN Included</a
+                  >
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> Automated Backup</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="single-pricing-box">
+              <div class="pricing-title">
+                <h3>Business</h3>
+                <p>Powerful & Awesome Elements</p>
+              </div>
+              <div class="pricing-amount-date">
+                <h1>$99.00 <span>/Month</span></h1>
+              </div>
+              <a href="" class="pricing-plan-btn">
+                <i class="ri-mouse-line"></i>Select Plan</a
+              >
+
+              <h6>Auto Renewal <span>Cancel Anytime</span></h6>
+
+              <ul class="pricing-features-list">
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 50 Website</a>
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 100 GB SSD Storage</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free SSL Certificate</a
+                  >
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 30 Email</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> 24/7 Customer Supporte</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free Theme Installation</a
+                  >
+                </li>
+
+                <li>
+                  <a href=""><i class="fal fa-check"></i> Free CDN Included</a>
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> Automated Backup</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--12 manth pricing tab -->
+        <div class="row justify-center" id="pricing-tab">
+          <!-- pricing - box -->
+          <div class="col-lg-4 col-md-6">
+            <div class="single-pricing-box">
+              <div class="pricing-title">
+                <h3>Individual</h3>
+                <p>Powerful & Awesome Elements</p>
+              </div>
+              <div class="pricing-amount-date">
+                <h1>$149.50 <span>/Month</span></h1>
+              </div>
+              <a href="" class="pricing-plan-btn">
+                <i class="ri-mouse-line"></i>Select Plan</a
+              >
+
+              <h6>Auto Renewal <span>Cancel Anytime</span></h6>
+
+              <ul class="pricing-features-list">
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 25 Website</a>
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 60 GB SSD Storage</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free SSL Certificate</a
+                  >
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 28 Email</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> 24/7 Customer Supporte</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free Theme Installation</a
+                  >
+                </li>
+
+                <li>
+                  <a href="" class="color-dark"
+                    ><i class="fal fa-check"></i> Free CDN Included</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="color-dark"
+                    ><i class="fal fa-check"></i> Automated Backup</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- pricing - box -->
+          <div class="col-lg-4 col-md-6">
+            <div class="single-pricing-box">
+              <div class="pricing-recommended">Recommended</div>
+              <div class="pricing-title">
+                <h3>Small Team</h3>
+                <p>Powerful & Awesome Elements</p>
+              </div>
+              <div class="pricing-amount-date">
+                <h1>$179.90 <span>/Month</span></h1>
+              </div>
+              <a href="" class="pricing-plan-btn">
+                <i class="ri-mouse-line"></i>Select Plan</a
+              >
+
+              <h6>Auto Renewal <span>Cancel Anytime</span></h6>
+
+              <ul class="pricing-features-list">
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 70 Website</a>
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 80 GB SSD Storage</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free SSL Certificate</a
+                  >
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 50 Email</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> 24/7 Customer Supporte</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free Theme Installation</a
+                  >
+                </li>
+
+                <li>
+                  <a href="" class="color-dark"
+                    ><i class="fal fa-check"></i> Free CDN Included</a
+                  >
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> Automated Backup</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="single-pricing-box">
+              <div class="pricing-title">
+                <h3>Business</h3>
+                <p>Powerful & Awesome Elements</p>
+              </div>
+              <div class="pricing-amount-date">
+                <h1>$199.00 <span>/Month</span></h1>
+              </div>
+              <a href="" class="pricing-plan-btn">
+                <i class="ri-mouse-line"></i>Select Plan</a
+              >
+
+              <h6>Auto Renewal <span>Cancel Anytime</span></h6>
+
+              <ul class="pricing-features-list">
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 100 Website</a>
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 120 GB SSD Storage</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free SSL Certificate</a
+                  >
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 90 Email</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> 24/7 Customer Supporte</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free Theme Installation</a
+                  >
+                </li>
+
+                <li>
+                  <a href=""><i class="fal fa-check"></i> Free CDN Included</a>
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> Automated Backup</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--36 manth pricing tab -->
+        <div class="row justify-center" id="pricing-tab">
+          <!-- pricing - box -->
+          <div class="col-lg-4 col-md-6">
+            <div class="single-pricing-box">
+              <div class="pricing-title">
+                <h3>Small Team</h3>
+                <p>Powerful & Awesome Elements</p>
+              </div>
+              <div class="pricing-amount-date">
+                <h1>$249.50 <span>/Month</span></h1>
+              </div>
+              <a href="" class="pricing-plan-btn">
+                <i class="ri-mouse-line"></i>Select Plan</a
+              >
+
+              <h6>Auto Renewal <span>Cancel Anytime</span></h6>
+
+              <ul class="pricing-features-list">
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 125 Website</a>
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 160 GB SSD Storage</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free SSL Certificate</a
+                  >
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 128 Email</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> 24/7 Customer Supporte</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free Theme Installation</a
+                  >
+                </li>
+
+                <li>
+                  <a href="" class="color-dark"
+                    ><i class="fal fa-check"></i> Free CDN Included</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="color-dark"
+                    ><i class="fal fa-check"></i> Automated Backup</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- pricing - box -->
+          <div class="col-lg-4 col-md-6">
+            <div class="single-pricing-box">
+              <div class="pricing-recommended">Recommended</div>
+              <div class="pricing-title">
+                <h3>Individual</h3>
+                <p>Powerful & Awesome Elements</p>
+              </div>
+              <div class="pricing-amount-date">
+                <h1>$279.90<span>/Month</span></h1>
+              </div>
+              <a href="" class="pricing-plan-btn">
+                <i class="ri-mouse-line"></i>Select Plan</a
+              >
+
+              <h6>Auto Renewal <span>Cancel Anytime</span></h6>
+
+              <ul class="pricing-features-list">
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 170 Website</a>
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 180 GB SSD Storage</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free SSL Certificate</a
+                  >
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 150 Email</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> 24/7 Customer Supporte</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free Theme Installation</a
+                  >
+                </li>
+
+                <li>
+                  <a href="" class="color-dark"
+                    ><i class="fal fa-check"></i> Free CDN Included</a
+                  >
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> Automated Backup</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- pricing-box -->
+          <div class="col-lg-4 col-md-6">
+            <div class="single-pricing-box">
+              <div class="pricing-title">
+                <h3>Business</h3>
+                <p>Powerful & Awesome Elements</p>
+              </div>
+              <div class="pricing-amount-date">
+                <h1>$299.00<span>/Month</span></h1>
+              </div>
+              <a href="" class="pricing-plan-btn">
+                <i class="ri-mouse-line"></i>Select Plan</a
+              >
+
+              <h6>Auto Renewal <span>Cancel Anytime</span></h6>
+
+              <ul class="pricing-features-list">
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 200 Website</a>
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 220 GB SSD Storage</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free SSL Certificate</a
+                  >
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> 290 Email</a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> 24/7 Customer Supporte</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fal fa-check"></i> Free Theme Installation</a
+                  >
+                </li>
+
+                <li>
+                  <a href=""><i class="fal fa-check"></i> Free CDN Included</a>
+                </li>
+                <li>
+                  <a href=""><i class="fal fa-check"></i> Automated Backup</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="" class="see-all-pricing-btn">See-Pricing-Plan</a>
+      </div>
+    </section>
+
+    <!-- ===================================================================================
+    ===>                      PANEL SECTION START
+    <!-- =================================================================================-->
+
+    <section class="padding-bottom-90">
+      <div class="container">
+        <div class="row item-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="panel-inforamtion">
+              <!-- panelbox-title -->
+
+              <div class="panel-title">
+                <h5>Raxi Strength</h5>
+                <h2>Powerful Control Panel</h2>
+                <p>
+                  Raxi is best hosting provider whole over the world ipsum dolor
+                  sit amet consectetur adipiscing elit. Ultricies magna
+                  pellentesque integer id porta dolor. Over the world ipsum
+                  dolor sit amet consectetur adipiscing elit.
+                </p>
+              </div>
+              <!-- panelbox-info -->
+
+              <div class="panel-single-box">
+                <div class="panel-image">
+                  <img
+                    src="./accest/images/img1.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="panel-info">
+                  <h3>Easy to Use</h3>
+                  <p>
+                    Raxi is best hosting provider whole over the world ipsum
+                    dolor sit amet consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+              <!-- panelbox-info -->
+              <div class="panel-single-box">
+                <div class="panel-image">
+                  <img
+                    src="./accest/images/img2.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="panel-info">
+                  <h3>Secure Cloud Technology</h3>
+                  <p>
+                    Raxi is best hosting provider whole over the world ipsum
+                    dolor sit amet consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+              <!-- panelbox-info -->
+
+              <div class="panel-single-box">
+                <div class="panel-image">
+                  <img
+                    src="./accest/images/img3.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="panel-info">
+                  <h3>Dedicated Server</h3>
+                  <p>
+                    Raxi is best hosting provider whole over the world ipsum
+                    dolor sit amet consectetur adipiscing elit.
+                  </p>
+                  <a href="">See Pur Hosting Plan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="panel-left-image">
+              <img src="./accest/images/panel-1.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================================
+    ===>                      SERVICES SECTION START
+    <!-- =================================================================================-->
+
+    <section class="padding-bottom-90 padding-top" id="services">
+      <div class="container">
+        <div class="col-sm-12">
+          <div class="title">
+            <h5>Services</h5>
+            <h2>Services We Provide</h2>
+            <p>
+              Most powerful and exciting services for all Pay by monthly or
+              yearly, you can cancel it anytime whatever you want
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-services">
+              <div class="image">
+                <a href="services-details.html"
+                  ><img src="./accest/images/services-1.png" alt="image"
+                /></a>
+              </div>
+              <h3>
+                <a href="services-details.html">WordPress Hosting</a>
+              </h3>
+              <p>
+                Raxi hosting ipsum dolor sit amet consectetur adipiscing elit
+                ultricies magna design pellentesque integer.
+              </p>
+              <a href="services-details.html" class="services-btn"
+                ><i class="far fa-arrow-right"></i> Read More</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-services">
+              <div class="image">
+                <a href="services-details.html"
+                  ><img src="./accest/images/services-2.png" alt="image"
+                /></a>
+              </div>
+              <h3>
+                <a href="services-details.html">Dedicated Hosting</a>
+              </h3>
+              <p>
+                Raxi hosting ipsum dolor sit amet consectetur adipiscing elit
+                ultricies magna design pellentesque integer.
+              </p>
+              <a href="services-details.html" class="services-btn"
+                ><i class="far fa-arrow-right"></i> Read More</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-services">
+              <div class="image">
+                <a href="services-details.html"
+                  ><img src="./accest/images/services-3.png" alt="image"
+                /></a>
+              </div>
+              <h3>
+                <a href="services-details.html">Shared Hosting</a>
+              </h3>
+              <p>
+                Raxi hosting ipsum dolor sit amet consectetur adipiscing elit
+                ultricies magna design pellentesque integer.
+              </p>
+              <a href="services-details.html" class="services-btn"
+                ><i class="far fa-arrow-right"></i> Read More</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-services">
+              <div class="image">
+                <a href="services-details.html"
+                  ><img src="./accest/images/services-4.png" alt="image"
+                /></a>
+              </div>
+              <h3>
+                <a href="services-details.html">Server Management</a>
+              </h3>
+              <p>
+                Raxi hosting ipsum dolor sit amet consectetur adipiscing elit
+                ultricies magna design pellentesque integer.
+              </p>
+              <a href="services-details.html" class="services-btn"
+                ><i class="far fa-arrow-right"></i> Read More</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-services">
+              <div class="image">
+                <a href="services-details.html"
+                  ><img src="./accest/images/services-5.png" alt="image"
+                /></a>
+              </div>
+              <h3>
+                <a href="services-details.html">Cloud Hosting</a>
+              </h3>
+              <p>
+                Raxi hosting ipsum dolor sit amet consectetur adipiscing elit
+                ultricies magna design pellentesque integer.
+              </p>
+              <a href="services-details.html" class="services-btn"
+                ><i class="far fa-arrow-right"></i> Read More</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-services">
+              <div class="image">
+                <a href="services-details.html"
+                  ><img src="./accest/images/services-6.png" alt="image"
+                /></a>
+              </div>
+              <h3>
+                <a href="services-details.html">VPS Hosting</a>
+              </h3>
+              <p>
+                Raxi hosting ipsum dolor sit amet consectetur adipiscing elit
+                ultricies magna design pellentesque integer.
+              </p>
+              <a href="services-details.html" class="services-btn"
+                ><i class="far fa-arrow-right"></i> Read More</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-services">
+              <div class="image">
+                <a href="services-details.html"
+                  ><img src="./accest/images/services-7.png" alt="image"
+                /></a>
+              </div>
+              <h3>
+                <a href="services-details.html">Domain Registration</a>
+              </h3>
+              <p>
+                Raxi hosting ipsum dolor sit amet consectetur adipiscing elit
+                ultricies magna design pellentesque integer.
+              </p>
+              <a href="services-details.html" class="services-btn"
+                ><i class="far fa-arrow-right"></i> Read More</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-services">
+              <div class="image">
+                <a href="services-details.html"
+                  ><img src="./accest/images/services-8.png" alt="image"
+                /></a>
+              </div>
+              <h3>
+                <a href="services-details.html">Cloud Computing</a>
+              </h3>
+              <p>
+                Raxi hosting ipsum dolor sit amet consectetur adipiscing elit
+                ultricies magna design pellentesque integer.
+              </p>
+              <a href="services-details.html" class="services-btn"
+                ><i class="far fa-arrow-right"></i> Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================================
+    ===>                      hosting SECTION START
+    <!-- =================================================================================-->
+
+    <section class="padding-bottom-50">
+      <div class="container">
+        <div class="row item-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="panel-inforamtion">
+              <!-- panelbox-title -->
+
+              <div class="panel-title">
+                <h5>Hosting Way</h5>
+                <h2>Fast & Powerfull Hosting for Your Business</h2>
+                <p>
+                  Raxi is best hosting provider whole over the world ipsum dolor
+                  sit amet consectetur adipiscing elit. Ultricies magna
+                  pellentesque integer id porta dolor. Over the world ipsum
+                  dolor sit amet consectetur adipiscing elit.
+                </p>
+              </div>
+              <!-- panelbox-info -->
+
+              <div class="panel-single-box">
+                <div class="panel-image">
+                  <img
+                    src="./accest/images/services-1.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="panel-info">
+                  <h3>WordPress Hosting</h3>
+                  <p>
+                    Raxi is best hosting provider whole over the world ipsum
+                    dolor sit amet consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+              <!-- panelbox-info -->
+              <div class="panel-single-box">
+                <div class="panel-image">
+                  <img
+                    src="./accest/images/services-2.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="panel-info">
+                  <h3>Dedicated Hosting</h3>
+                  <p>
+                    Raxi is best hosting provider whole over the world ipsum
+                    dolor sit amet consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+              <!-- panelbox-info -->
+
+              <div class="panel-single-box">
+                <div class="panel-image">
+                  <img
+                    src="./accest/images/services-3.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="panel-info">
+                  <h3>Shared Hosting</h3>
+                  <p>
+                    Raxi is best hosting provider whole over the world ipsum
+                    dolor sit amet consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="panel-left-image">
+              <img
+                src="./accest/images/hosting-1.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================================
+    ===>                      COUNTRY LOCATION SECTION START
+    <!-- =================================================================================-->
+
+    <section class="country-location">
+      <div class="container">
+        <div class="countey-location-slider owl-carousel owl-theme">
+          <div class="item">
+            <div class="single-countety-box">
+              <div class="country-flag">
+                <img
+                  src="./accest/images/australia.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="countey-info">
+                <h3>australia</h3>
+                <p>South Town, 290 Motors, New 210 Canberra, Australia</p>
+                <a href="">show maps</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="single-countety-box">
+              <div class="country-flag">
+                <img
+                  src="./accest/images/united-states.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="countey-info">
+                <h3>united-states</h3>
+                <p>121 King St, 290 Motor, New Parkway, NY 11788</p>
+                <a href="">show maps</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="single-countety-box">
+              <div class="country-flag">
+                <img
+                  src="./accest/images/switzerland.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="countey-info">
+                <h3>switzerland</h3>
+                <p>New City 5, 290 Motor, New 210 Bern, Switzerland</p>
+                <a href="">show maps</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="single-countety-box">
+              <div class="country-flag">
+                <img
+                  src="./accest/images/united-kingdom.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="countey-info">
+                <h3>united-kingdom</h3>
+                <p>New Town, 290 Motors, New 210 London, United Kingdom</p>
+                <a href="">show maps</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="single-countety-box">
+              <div class="country-flag">
+                <img
+                  src="./accest/images/canada.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="countey-info">
+                <h3>canada</h3>
+                <p>New City 5, 290 Motor, New 210 Ottawa, Canada</p>
+                <a href="">show maps</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================================
+    ===>                      TESTIMUNAL SECTION START
+    <!-- =================================================================================-->
+
+    <section class="padding-top padding-bottom-90">
+      <div class="container-fluid">
+        <div class="col-sm-12">
+          <div class="title">
+            <h5>Testimonials</h5>
+            <h2>What Clients Are Saying</h2>
+            <p>
+              Most powerful and exciting services for all Pay by monthly or
+              yearly, you can cancel it anytime whatever you want
+            </p>
+          </div>
+        </div>
+
+        <div class="testimunial owl-carousel owl-theme">
+          <div class="item">
+            <div class="testimunial-single-box">
+              <div class="clint-icon-area">
+                <div class="quote-block-icon">
+                  <i class="far fa-user-alt"></i>
+                </div>
+                <div class="star-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+              </div>
+              <!-- clint info -->
+              <div class="person-single-box">
+                <p>
+                  ‘‘As a midsize software developent company we combine the best
+                  of both worlds. We have the focus and speed of the small it
+                  outsurcing companies along with the scalability and expertise
+                  of the big ones.’’
+                </p>
+                <div class="preson-image-info">
+                  <div class="person-image">
+                    <img
+                      src="./accest/images/testimonials-2.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="person-info">
+                    <h3>Carla Gentry</h3>
+                    <span>Web Developer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- clint box -->
+          <div class="item">
+            <div class="testimunial-single-box">
+              <div class="clint-icon-area">
+                <div class="quote-block-icon">
+                  <i class="far fa-user-alt"></i>
+                </div>
+                <div class="star-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+              </div>
+              <!-- clint info -->
+              <div class="person-single-box">
+                <p>
+                  ‘‘As a midsize software developent company we combine the best
+                  of both worlds. We have the focus and speed of the small it
+                  outsurcing companies along with the scalability and expertise
+                  of the big ones.’’
+                </p>
+                <div class="preson-image-info">
+                  <div class="person-image">
+                    <img
+                      src="./accest/images/testimonials-1.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="person-info">
+                    <h3>Marie Curie</h3>
+                    <span>Support</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- clint box -->
+          <div class="item">
+            <div class="testimunial-single-box">
+              <div class="clint-icon-area">
+                <div class="quote-block-icon">
+                  <i class="far fa-user-alt"></i>
+                </div>
+                <div class="star-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+              </div>
+              <!-- clint info -->
+              <div class="person-single-box">
+                <p>
+                  ‘‘As a midsize software developent company we combine the best
+                  of both worlds. We have the focus and speed of the small it
+                  outsurcing companies along with the scalability and expertise
+                  of the big ones.’’
+                </p>
+                <div class="preson-image-info">
+                  <div class="person-image">
+                    <img
+                      src="./accest/images/testimonials-3.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="person-info">
+                    <h3>Merv Adrian</h3>
+                    <span>UX/UI Designer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- clint box -->
+          <div class="item">
+            <div class="testimunial-single-box">
+              <div class="clint-icon-area">
+                <div class="quote-block-icon">
+                  <i class="far fa-user-alt"></i>
+                </div>
+                <div class="star-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+              </div>
+              <!-- clint info -->
+              <div class="person-single-box">
+                <p>
+                  ‘‘As a midsize software developent company we combine the best
+                  of both worlds. We have the focus and speed of the small it
+                  outsurcing companies along with the scalability and expertise
+                  of the big ones.’’
+                </p>
+                <div class="preson-image-info">
+                  <div class="person-image">
+                    <img
+                      src="./accest/images/testimonials-4.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="person-info">
+                    <h3>Deanna Hodges</h3>
+                    <span>CEO & Founder</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12">
+          <div class="trust">
+            <a href="">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><span> Trustpilot</span></a
+            >
+            <span>Reviews 5,694 • Trust Score 4.9 at Trustpilot</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================================
+    ===>                       SECTION START
+    <!-- =================================================================================-->
+
+    <section
+      class="padding-bottom-90"
+      style="background-color: var(--parimary-blue)"
+    >
+      <div class="container">
+        <div class="woru">
+          <h2>
+            Have any Questions About Our Solutions or Pricing? We're Here to
+            Help You
+          </h2>
+          <a href="#"><i class="far fa-envelope-open"></i> contact</a>
+          <div class="woru-shape">
+            <img src="./accest/images/shape-1.png" alt="" />
+            <img src="./accest/images/shape-1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================================
+    ===>                     BLOG  SECTION START
+    <!-- =================================================================================-->
+
+    <section class="padding-bottom-60">
+      <div class="container">
+        <div class="col-sm-12">
+          <div class="title">
+            <h5>Blog</h5>
+            <h2>Popular Blog Post</h2>
+            <p>
+              We are try to update with latest article and blog post Best
+              Strategic planning update with latest update with latest
+            </p>
+          </div>
+        </div>
+        <div class="row justify-center">
+          <!-- blog-box-1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-post-single-box">
+              <div class="blog-post-image">
+                <img
+                  src="./accest/images/blog-1.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="blog-person-info">
+                <div class="blog-person-img">
+                  <img src="./accest/images/testimonials-1.jpg" alt="" />
+                  <div class="blog-post-person-name">
+                    <h3>
+                      Alex Morgan
+                      <span><i class="ri-timer-line"></i> March 14, 2021</span>
+                    </h3>
+                  </div>
+                </div>
+                <p><i class="ri-message-2-line"></i> (0) comment</p>
+              </div>
+              <div class="blog-post-title">
+                <a href=""
+                  >Branding Involves Developing a Strategy to Creating a Point
+                  of Differentiation.</a
+                >
+
+                <a href=""><i class="far fa-arrow-right"></i> read more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- blog-box-2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-post-single-box">
+              <div class="blog-post-image">
+                <img
+                  src="./accest/images/blog-2.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="blog-person-info">
+                <div class="blog-person-img">
+                  <img src="./accest/images/testimonials-2.jpg" alt="" />
+                  <div class="blog-post-person-name">
+                    <h3>
+                      Jhony Deep
+                      <span><i class="ri-timer-line"></i> March 14, 2021</span>
+                    </h3>
+                  </div>
+                </div>
+                <p><i class="ri-message-2-line"></i> (0) comment</p>
+              </div>
+              <div class="blog-post-title">
+                <a href="">Shared Hosting Plan For Your Small Business</a>
+
+                <a href=""><i class="far fa-arrow-right"></i> read more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- blog-box-3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-post-single-box">
+              <div class="blog-post-image">
+                <img
+                  src="./accest/images/blog-3.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="blog-person-info">
+                <div class="blog-person-img">
+                  <img src="./accest/images/testimonials-3.jpg" alt="" />
+                  <div class="blog-post-person-name">
+                    <h3>
+                      Leah Chatman
+                      <span><i class="ri-timer-line"></i> March 14, 2021</span>
+                    </h3>
+                  </div>
+                </div>
+                <p><i class="ri-message-2-line"></i> (0) comment</p>
+              </div>
+              <div class="blog-post-title">
+                <a href=""
+                  >Web Hosting is an Online Service That Enables You to
+                  Publish.</a
+                >
+
+                <a href=""><i class="far fa-arrow-right"></i> read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-area pt-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-footer-widget">
+              <div class="widget-logo">
+                <a href="index.html">
+                  <img src="./accest/images/white-logo.png" alt="image" />
+                </a>
+              </div>
+              <p>
+                Best solution for your it startup business consecteturadipiscing
+                elit. Scelerisque amet odio velit auctor. nam elit nulla.
+              </p>
+
+              <ul class="widget-info">
+                <li>
+                  <i class="fas fa-headphones-alt"></i>
+                  <a href="tel:3128959800">(312) 895-9800</a>
+                </li>
+
+                <li>
+                  <i class="far fa-globe"></i>
+                  <a href="mailto:hello.me@raxi.com">hello.me@raxi.com</a>
+                </li>
+
+                <li>
+                  <i class="ri-map-pin-line"></i> 121 St, Melbourne VIC 3000,
+                  Australia
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-sm-3">
+            <div class="single-footer-widget">
+              <h3>Quick Link</h3>
+
+              <ul class="footer-links-list">
+                <li><a href="affiliate-program.html">Affiliate Program</a></li>
+                <li><a href="voice-servers.html">Voice Servers</a></li>
+                <li><a href="virtual-numbers.html">Virtual Numbers</a></li>
+                <li><a href="database-services.html">Database Services</a></li>
+                <li><a href="wordpress-hosting.html">Hosting</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                <li><a href="ddos-protections.html">DDoS Protections</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-sm-3">
+            <div class="single-footer-widget">
+              <h3>About Us</h3>
+
+              <ul class="footer-links-list">
+                <li><a href="wordpress-hosting.html">Hosting</a></li>
+                <li><a href="domain.html">Domains</a></li>
+                <li><a href="faq.html">Faq’s</a></li>
+                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pricing.html">Pricing Plan</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-sm-6">
+            <div class="single-footer-widget">
+              <h3>Services</h3>
+
+              <ul class="footer-links-list">
+                <li><a href="wordpress-hosting.html">WordPress Hosting</a></li>
+                <li><a href="cloud-hosting.html">Cloud Hosting</a></li>
+                <li><a href="shared-hosting.html">Shared Hosting</a></li>
+                <li><a href="dedicated-hosting.html">Dedicated Hosting</a></li>
+                <li><a href="vps-hosting.html">VPS Hosting</a></li>
+                <li><a href="reseller-hosting.html">Reseller Hosting</a></li>
+                <li><a href="email-hosting.html">Email Hosting</a></li>
+                <li>
+                  <a href="windows-vps-hosting.html">Windows VPS Hosting</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-footer-widget">
+              <h3>Newsletter</h3>
+
+              <div class="widget-newsletter">
+                <div class="newsletter-content">
+                  <p>
+                    Best solution for your it startup business
+                    consecteturadipiscing elit.
+                  </p>
+                </div>
+
+                <form
+                  class="newsletter-form"
+                  data-bs-toggle="validator"
+                  novalidate="true"
+                >
+                  <input
+                    type="email"
+                    id="footer-input"
+                    placeholder="Email Address"
+                    required=""
+                    autocomplete="off"
+                  />
+
+                  <button
+                    type="submit"
+                    id="footer-btn"
+                    onclick=" return footerinputvalict()"
+                  >
+                    <i class="fal fa-share-all"></i>
+                  </button>
+                  <div id="validator-newsletter" class="form-result"></div>
+                </form>
+              </div>
+
+              <ul class="widget-social">
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright-area">
+        <div class="container">
+          <ul class="payment-types">
+            <li>
+              <a href="#" target="_blank"
+                ><img src="./accest/images/f-b1.png" alt="image"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="./accest/images/f-b2.png" alt="image"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="./accest/images/f-b-3.png" alt="image"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="./accest/images/f-b4.png" alt="image"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="./accest/images/f-b-5.png" alt="image"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="./accest/images/f-b6.png" alt="image"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="./accest/images/f-b7.png" alt="image"
+              /></a>
+            </li>
+          </ul>
+
+          <div class="copyright-area-content">
+            <p>
+              Copyright @2022 Raxi. All Rights Reserved by
+              <a href="" target="_blank">HABIB</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-shape-1">
+        <img src="./accest/images/shape-2.png" alt="image" />
+      </div>
+
+      <div class="footer-shape-2">
+        <img src="./accest/images/shape-2.png" alt="image" />
+      </div>
+    </footer>
+
+    <a href="#ff" id="scroll-up"><i class="far fa-arrow-up"></i></a>
+
+    <!--  ============================== JVAVA-SCERIPT - JS CDN FILE ====================-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./accest/java-script/java-script.js"></script>
+    <!-- ================ OWL CAURSAL SLIDE JS ================ -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./accest/java-script/owl.carousel.min.js"></script>
+    <script>
+      $(".partner-slides").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+
+      $(".countey-location-slider").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        delay: 2000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+
+      $(".testimunial").owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: true,
+        dots: false,
+
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 2,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
